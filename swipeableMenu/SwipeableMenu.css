@@ -1,0 +1,88 @@
+.SwipeMenu {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+.SwipeMenu__Handle {
+    position: absolute;
+    z-index: 1;
+    top: -90%;
+    height: 100%;
+    width: 100%;
+
+    box-sizing: border-box;
+    border-radius: 0 0 40px 40px;
+
+    touch-action: none;
+  }
+  
+  .BouncingMenu__Handle {
+    position: absolute;
+    z-index: 1;
+    top: -90%;
+    height: 100%;
+    width: 100%;
+
+    transition: transform 1s ease-out;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0 0 40px 40px;
+    touch-action: none;
+  }
+  
+  .SwipeMenu__Content {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    height: 90%;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgb(242, 242, 242);
+    box-sizing: border-box;
+  }
+  
+  .SwipeMenu__Wrapper {
+    position: relative;
+    transition: max-height 0.5s ease;
+    max-height: 1000px;
+    transform-origin: top;
+    width: 100%;
+    height: 100%;
+  }
+
+  .SwipeMenu__Header {
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+      width: 100%;
+      height: 10%;
+    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(128, 177, 179, 0.8);
+
+      border-radius: 0 0 40px 40px;
+      margin: 0;
+      font-size: 1em;
+      cursor: pointer;
+  }
+
+  .SwipeMenu__Header-text {
+    margin: 5px 0 0 0;
+    font-size: 18px;
+  }
+
+  .SwipeMenu__Default{
+      padding-top: 18%;
+      height: 100%;
+  }
